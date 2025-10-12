@@ -14,7 +14,7 @@ import 'print_get_cli.dart';
 void checkForUpdate() async {
   if (!CliConfig.updateIsCheckingToday()) {
     if (!isDevVersion()) {
-      await PubDevApi.getLatestVersionFromPackage('get_cli')
+      await PubDevApi.getLatestVersionFromPackage('get_cli5')
           .then((versionInPubDev) async {
         await PubspecLock.getVersionCli(disableLog: true)
             .then((versionInstalled) async {

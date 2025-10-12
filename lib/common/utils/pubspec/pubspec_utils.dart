@@ -25,9 +25,9 @@ class PubspecUtils {
   static final _mapSep = _PubValue<String>(() {
     var yaml = pubspecJson;
 
-    if (yaml.containsKey('get_cli')) {
-      if ((yaml['get_cli'] as Map).containsKey('separator')) {
-        return (yaml['get_cli']['separator'] as String?) ?? '';
+    if (yaml.containsKey('get_cli5')) {
+      if ((yaml['get_cli5'] as Map).containsKey('separator')) {
+        return (yaml['get_cli5']['separator'] as String?) ?? '';
       }
     }
 
@@ -40,23 +40,26 @@ class PubspecUtils {
 
   static String? get projectName => _mapName.value;
 
-  static final _extraFolder = _PubValue<bool?>(
-    () {
-      try {
-        var yaml = pubspecJson;
-        if (yaml.containsKey('get_cli')) {
-          if ((yaml['get_cli'] as Map).containsKey('sub_folder')) {
-            return (yaml['get_cli']['sub_folder'] as bool?);
-          }
-        }
-      } on Exception catch (_) {}
-      // retorno nulo está sendo tratado
-      // ignore: avoid_returning_null
-      return null;
-    },
-  );
+  // static final _extraFolder = _PubValue<bool?>(
+  //   () {
+  //     try {
+  //       var yaml = pubspecJson;
+  //       if (yaml.containsKey('get_cli5')) {
+  //         if ((yaml['get_cli5'] as Map).containsKey('sub_folder')) {
+  //           return (yaml['get_cli5']['sub_folder'] as bool?);
+  //         }
+  //       }
+  //     } on Exception catch (_) {}
+  //     // retorno nulo está sendo tratado
+  //     // ignore: avoid_returning_null
+  //     return null;
+  //   },
+  // );
 
-  static bool? get extraFolder => _extraFolder.value;
+  // static bool? get extraFolder => _extraFolder.value;
+
+  ///Yuriy: changed to always create flat folder inside module
+  static bool? get extraFolder => false;
 
   static Future<bool> addDependencies(String package,
       {String? version, bool isDev = false, bool runPubGet = true}) async {

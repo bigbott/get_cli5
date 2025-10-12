@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:get_cli/functions/create/create_single_file.dart';
-import 'package:get_cli/functions/formatter_dart_file/frommatter_dart_file.dart';
+import 'package:get_cli5/functions/create/create_single_file.dart';
+import 'package:get_cli5/functions/formatter_dart_file/frommatter_dart_file.dart';
 
 import '../exception_handler/exceptions/cli_exception.dart';
 import 'string.dart';
