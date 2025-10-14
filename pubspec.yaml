@@ -1,8 +1,7 @@
-name: get_cli
-version: 1.9.1
-homepage: https://github.com/jonataslaw/get_cli
-description: Official CLI for GetX™ framework to build Flutter and Server
-  Applications easily
+name: get_cli5
+version: 1.0.1
+homepage: https://github.com/bigbott/get_cli5
+description: Unofficial CLI for GetX5
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
