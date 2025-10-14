@@ -18,16 +18,21 @@ class BindingSample extends Sample {
       ? "import 'package:get_server/get_server.dart';"
       : "import 'package:get/get.dart';";
 
+
+///Yuriy: changed to GetX5 Binding
+///replaced lazyPut with put
   @override
   String get content => '''$_import
 import 'package:${PubspecUtils.projectName}/$_controllerDir';
 
-class $_bindingName extends Bindings {
+class $_bindingName extends Binding {
   @override
-  void dependencies() {
-    Get.lazyPut<${_fileName.pascalCase}Controller>(
-      () => ${_fileName.pascalCase}Controller(),
-    );
+  List<Bind> dependencies() {
+    return [
+      Bind.put<${_fileName.pascalCase}Controller>(
+        ${_fileName.pascalCase}Controller(),
+      )
+    ];  
   }
 }
 ''';
