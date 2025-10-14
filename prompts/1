@@ -1,0 +1,21 @@
+
+
+This is a CLI dart project. 
+It can generate initial project structure 
+with 
+app/data 
+app/presentation
+folders.  
+
+Generate new create command that will 
+make a <Name>Service class. 
+
+Command should have a format: 
+create service:name on folder
+
+with on folder being optional
+
+create service:auth should create AuthService
+in app/data folder
+
+create service:auth on appwrite should create AuthService in app/data/appwrite
