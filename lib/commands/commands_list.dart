@@ -10,6 +10,7 @@ final List<Command> commands = [
       CreateProjectCommand(),
       CreateProviderCommand(),
       CreateScreenCommand(),
+      CreateServiceCommand(),  // Add this line
       CreateViewCommand()
     ],
     ['-c'],
