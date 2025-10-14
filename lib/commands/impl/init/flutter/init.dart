@@ -14,18 +14,22 @@ class InitCommand extends Command {
 
   @override
   Future<void> execute() async {
-    final menu = Menu([
-      'GetX Pattern (by Kauê)',
-      'CLEAN (by Arktekko)',
-    ], title: 'Which architecture do you want to use?');
-    final result = menu.choose();
+    // final menu = Menu([
+    //   'GetX Pattern (by Kauê)',
+    //   'CLEAN (by Arktekko)',
+    // ], title: 'Which architecture do you want to use?');
+    // final result = menu.choose();
 
-    result.index == 0
-        ? await createInitGetxPattern()
-        : await createInitKatekko();
-    if (!PubspecUtils.isServerProject) {
-      await ShellUtils.pubGet();
-    }
+    // result.index == 0
+    //     ? await createInitGetxPattern()
+    //     : await createInitKatekko();
+    // if (!PubspecUtils.isServerProject) {
+    //   await ShellUtils.pubGet();
+    // }
+
+    ///Yuriy: changed to always use GetXPattern
+    await createInitGetxPattern();
+
     return;
   }
 
