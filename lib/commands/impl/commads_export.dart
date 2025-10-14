@@ -3,6 +3,7 @@ export 'create/page/page.dart';
 export 'create/project/project.dart';
 export 'create/provider/provider.dart';
 export 'create/screen/screen.dart';
+export 'create/service/service.dart';  // Add this line
 export 'create/view/view.dart';
 export 'generate/locales/locales.dart';
 export 'generate/model/model.dart';
