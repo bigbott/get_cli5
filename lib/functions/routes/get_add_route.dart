@@ -32,7 +32,7 @@ void addRoute(String nameRoute, String bindingDir, String viewDir) {
     pathSplit.removeLast();
   }
 
-  pathSplit.removeWhere((element) => element == 'app' || element == 'modules');
+  pathSplit.removeWhere((element) => element == 'app' || element == 'presentation');
 
   for (var i = 0; i < pathSplit.length; i++) {
     pathSplit[i] =
