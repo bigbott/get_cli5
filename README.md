@@ -4,7 +4,7 @@ Unofficial CLI for the GetX5.
 
 This is the fork of [get_cli](https://pub.dev/packages/get_cli) version 1.9.1.
 
-####Changes
+#### Changes
 The following changes has been made:
 1. get_cli5 installs GetX version 5.0.0-release-candidate-9.3.2 (The latest release candidate at the moment) instead of latest stable version (4.7.2). Since the caret syntax doesn't work with RC versions, in case new version will be available in the future, manual fix will be required in *pubspec.yaml*.
 
@@ -66,7 +66,7 @@ without option for extra folders.
   
 
 
-####Installation
+#### Installation
 
 First deactivate get_cli (if it has been activated)
 `dart pub global deactivate get_cli`
