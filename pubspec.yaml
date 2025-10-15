@@ -1,5 +1,5 @@
 name: get_cli5
-version: 1.0.1
+version: 0.1.0
 homepage: https://github.com/bigbott/get_cli5
 description: Unofficial CLI for GetX5
 environment:
