@@ -5,6 +5,7 @@ Unofficial CLI for the GetX5.
 This is the fork of [get_cli](https://pub.dev/packages/get_cli) version 1.9.1.
 
 #### Changes
+
 The following changes has been made:
 1. get_cli5 installs GetX version 5.0.0-release-candidate-9.3.2 (The latest release candidate at the moment) instead of latest stable version (4.7.2). Since the caret syntax doesn't work with RC versions, in case new version will be available in the future, manual fix will be required in *pubspec.yaml*.
 
@@ -75,7 +76,9 @@ then activate get_cli5
 `dart pub global activate get_cli5`
 
 #### Usage
+
 1. **Init project**
+   
    Create Flutter project using *View->Command Pallete...* or by running `flutter create` in terminal. 
    Run `get init` command in terminal
    It will generate following folders and files
@@ -83,6 +86,7 @@ then activate get_cli5
    ![init folder structure](/screenshots/getx_init_folders.png)
    
 2. **Add a view to the project**   
+   
 The command `get create page:settings` will generate folder `settings` inside the `presentation` folder.
 
 ![create page folder structure](/screenshots/getx_create_page.png)
