@@ -79,12 +79,14 @@ then activate get_cli5
    Create Flutter project using *View->Command Pallete...* or by running `flutter create` in terminal. 
    Run `get init` command in terminal
    It will generate following folders and files
+
    ![init folder structure](/screenshots/getx_init_folders.png)
    
 2. **Add a view to the project**   
 The command `get create page:settings` will generate folder `settings` inside the `presentation` folder.
 
 ![create page folder structure](/screenshots/getx_create_page.png)
+
 Also routes inside the `routes` folder will be updated. 
 In case the desired name is "game settings" use `get create page:game-settings` command. 
 
