@@ -170,9 +170,6 @@ class ObjectNode extends Node {
       loc == other.loc &&
       _compareDynamicList(children, other.children);
 
-  @override
-  // TODO: implement hashCode
-  int get hashCode => super.hashCode;
 }
 
 class ArrayNode extends Node {
@@ -200,9 +197,6 @@ class ArrayNode extends Node {
       loc == other.loc &&
       _compareDynamicList(children, other.children);
 
-  @override
-  // TODO: implement hashCode
-  int get hashCode => super.hashCode;
 }
 
 class PropertyNode extends Node {
@@ -249,9 +243,6 @@ class PropertyNode extends Node {
     );
   }
 
-  @override
-  // TODO: implement hashCode
-  int get hashCode => super.hashCode;
 }
 
 class LiteralNode extends Node {
@@ -287,9 +278,6 @@ class LiteralNode extends Node {
     );
   }
 
-  @override
-  // TODO: implement hashCode
-  int get hashCode => super.hashCode;
 }
 
 @immutable
@@ -303,9 +291,6 @@ class ValueIndex<T> {
   bool operator ==(Object other) =>
       other is ValueIndex<T> && value == other.value && index == other.index;
 
-  @override
-  // TODO: implement hashCode
-  int get hashCode => super.hashCode;
 }
 
 // HELPERS

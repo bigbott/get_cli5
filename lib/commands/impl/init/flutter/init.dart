@@ -1,12 +1,8 @@
-import '../../../../common/menu/menu.dart';
 import '../../../../common/utils/logger/log_utils.dart';
-import '../../../../common/utils/pubspec/pubspec_utils.dart';
-import '../../../../common/utils/shell/shel.utils.dart';
 import '../../../../core/internationalization.dart';
 import '../../../../core/locales.g.dart';
 import '../../../interface/command.dart';
 import 'init_getxpattern.dart';
-import 'init_katteko.dart';
 
 class InitCommand extends Command {
   @override
